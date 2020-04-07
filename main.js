@@ -8,6 +8,24 @@ var h = 1;
 var pp = 1;
 var hh = 1;
 var r = 1;
+var parent = document.querySelector('body');
+
+var text = document.createElement('textarea');
+text.id = "textarea";
+
+parent.appendChild(text);
+
+var lang = document.createElement('div');
+lang.id = "language";
+lang.className = "language";
+lang.innerHTML = "Language";
+
+parent.appendChild(lang);
+
+var keyboard = document.createElement('div');
+keyboard.id = "parent";
+
+parent.appendChild(keyboard);
 var language = document.getElementById('language');
 var anchors = document.getElementsByTagName('button');
 var parent = document.getElementById('parent');
