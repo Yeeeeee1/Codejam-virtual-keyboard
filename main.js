@@ -1,13 +1,12 @@
+/*eslint linebreak-style: ["error", "windows"]*/
 var n = 1;
 var x = 1;
 var p = 1;
 var aa = 2;
-var bb = 0;
 var c = 1;
 var h = 1;
 var pp = 1;
 var hh = 1;
-var r = 1;
 var parent = document.querySelector('body');
 
 var text = document.createElement('textarea');
@@ -774,10 +773,11 @@ shift.onclick = function (e) {
     }
     try {
     for (var b = 0; b < iiid.length; b++) {
-      var element = document.getElementById(iiid[b]).remove();
+      var element = document.getElementById(iiid[b]);
+      element.remove();
     }
     } catch(e) {
-
+      console.log(e);
     }
     var idd = "n";
 for (var i = 0; i < keyLayout.length; i++) {
@@ -787,18 +787,9 @@ for (var i = 0; i < keyLayout.length; i++) {
   iid.push(idd);
   }
 }
-            }
-          }
-          
         }
+      }    
     }
-    n++;
   }
-
-
+  n++; };
 //
-
-
-
-
-
