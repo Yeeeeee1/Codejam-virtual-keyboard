@@ -331,7 +331,6 @@ for (var i = 0; i < keyLayout.length; i++) {
   }
     var capslock = document.getElementById('gggggggggggggggggggggggggggggg');
     capslock.style.background = "darkgrey";
-    console.log(keyLayout);
   }
   //
   // CAPSLOCK OFF
@@ -412,12 +411,12 @@ for (var i = 0; i < keyLayout.length; i++) {
   }
   //
   //
-  console.log(keyLayout);
   for (var i = 0; i < physicalKeyCodes.length; i++) {
     if (e.code == physicalKeyCodes[i]) {
       if (e.code != "Tab" && e.code != "Backspace" && e.code != "ShiftLeft" && e.code != "ShiftRight" && e.code != "ControlLeft" && e.code != "ControlRight" && e.code != "AltLeft" && e.code != "AltRight" && e.code != "Enter" && e.code != "Delete" && e.code != "CapsLock") {
         textarea.value += keyLayout[i];
       }
+      try {
       if (hh % 2 == 0) {
       for (var s = 0; s < iiiiid.length; s++) {
         if (i == s) {
@@ -530,7 +529,10 @@ for (var i = 0; i < keyLayout.length; i++) {
         }
       }
     }
+    } catch(e) {
     }
+  }
+  
   }
 }
 
@@ -673,7 +675,6 @@ for(var i = 0; i < anchors.length; i++) {
   }
     var capslock = document.getElementById('gggggggggggggggggggggggggggggg');
     capslock.style.background = "darkgrey";
-    console.log(keyLayout);
   }
   //
   // CAPSLOCK OFF
@@ -777,7 +778,6 @@ shift.onclick = function (e) {
       element.remove();
     }
     } catch(e) {
-      console.log(e);
     }
     var idd = "n";
 for (var i = 0; i < keyLayout.length; i++) {
